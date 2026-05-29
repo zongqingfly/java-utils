@@ -1,6 +1,6 @@
-package com.fluckyeli.excel.useDemo;
+package com.fluckyeli.useDemo;
 
-import com.fluckyeli.excel.ExcelUtils;
+import com.fluckyeli.ExcelUtils;
 import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.*;

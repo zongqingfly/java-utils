@@ -1,4 +1,4 @@
-package com.fluckyeli.utils;
+package com.fluckyeli;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -12,7 +12,7 @@ public class JsonUtils {
      * @param obj 要转换的对象
      * @return JSON字符串
      */
-    public static String toJson(Object obj) {
+    public static String obj2Json(Object obj) {
         try {
             return objectMapper.writeValueAsString(obj);
         } catch (JsonProcessingException e) {
@@ -27,7 +27,7 @@ public class JsonUtils {
      * @param <T> 泛型类型
      * @return 转换后的对象
      */
-    public static <T> T fromJson(String json, Class<T> clazz) {
+    public static <T> T json2Obj(String json, Class<T> clazz) {
         try {
             return objectMapper.readValue(json, clazz);
         } catch (JsonProcessingException e) {
@@ -39,7 +39,8 @@ public class JsonUtils {
      * 传入对象后打印输出JSON
      * @param obj 要打印的对象
      */
-    public static void printJson(Object obj) {
-        System.out.println(toJson(obj));
+    public static void printObjByJson(Object obj) {
+        System.out.println(obj2Json(obj));
     }
+
 }

@@ -1,4 +1,4 @@
-package com.fluckyeli.excel;
+package com.fluckyeli;
 
 import java.lang.annotation.*;
 

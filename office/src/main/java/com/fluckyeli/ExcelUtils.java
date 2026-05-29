@@ -1,4 +1,4 @@
-package com.fluckyeli.excel;
+package com.fluckyeli;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;

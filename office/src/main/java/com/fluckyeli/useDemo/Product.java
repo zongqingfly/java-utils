@@ -1,6 +1,6 @@
-package com.fluckyeli.excel.useDemo;
+package com.fluckyeli.useDemo;
 
-import com.fluckyeli.excel.ExcelColumn;
+import com.fluckyeli.ExcelColumn;
 import lombok.Data;
 import lombok.ToString;
 
